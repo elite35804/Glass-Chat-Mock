@@ -24,3 +24,70 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Animated background keyframes */
+@keyframes blobFloatA {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  25% {
+    transform: translate3d(3%, -2%, 0) scale(1.05);
+  }
+  50% {
+    transform: translate3d(-2%, 3%, 0) scale(0.98);
+  }
+  75% {
+    transform: translate3d(2%, 1%, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes blobFloatB {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  25% {
+    transform: translate3d(-2%, 2%, 0) scale(1.02);
+  }
+  50% {
+    transform: translate3d(2%, -1%, 0) scale(1.04);
+  }
+  75% {
+    transform: translate3d(-3%, 1%, 0) scale(0.99);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes blobFloatC {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  25% {
+    transform: translate3d(1%, 3%, 0) scale(0.99);
+  }
+  50% {
+    transform: translate3d(-2%, -2%, 0) scale(1.03);
+  }
+  75% {
+    transform: translate3d(3%, -1%, 0) scale(1.01);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes gridDrift {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 24px 24px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
